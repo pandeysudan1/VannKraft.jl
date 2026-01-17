@@ -1,0 +1,6 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+VannKraft = "9821a89c-ab78-4e48-a4ef-e55e5f2159b2"
+
+[sources]
+VannKraft = {path = ".."}

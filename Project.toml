@@ -1,0 +1,13 @@
+name = "VannKraft"
+uuid = "9821a89c-ab78-4e48-a4ef-e55e5f2159b2"
+authors = ["pandeysudan1 <pandeysudan1@gmail.com> and contributors"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1.6.7"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
