@@ -20,7 +20,7 @@ using Plots
     @description "Trollheim: Full hydropower plant with surge tank and governor ramp"
     
     @components begin
-        # Water source
+        # Water source reservoir
         res  = Reservoir(H = 50.0)
         
         # Intake penstock (intake tunnel)
