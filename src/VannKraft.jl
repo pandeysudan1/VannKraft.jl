@@ -4,8 +4,7 @@ using ModelingToolkit
 using ModelingToolkit: t_nounits as t, D_nounits as Dt
 using ModelingToolkitStandardLibrary
 
-import SciCompDSL, DynamicQuantities
-using SciCompDSL: @mtkmodel, @mtkcompile, @connector, @register_symbolic
+using SciCompDSL
 
 # Interfaces / shared definitions
 include("connectors.jl")

@@ -11,6 +11,8 @@ using OrdinaryDiffEq
         @test_nowarn Surgetank(H = 80, L = 80, D = 4)
         @test_nowarn Turbine(H_n = 370, Vdot_n = 40)
     end
+    # Run the component unit tests
+    include("components_test.jl")
     
     # Test 2: Trollheim system compilation
     @testset "Trollheim System" begin
