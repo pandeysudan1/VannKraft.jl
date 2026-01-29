@@ -17,7 +17,7 @@ ModelingToolkit = "11,12"
 ModelingToolkitStandardLibrary = "2"
 OrdinaryDiffEq = "6"
 Plots = "1"
-SciCompDSL = "0.11-1"
+SciCompDSL = "1"
 julia = "1.6"
 
 [extras]
