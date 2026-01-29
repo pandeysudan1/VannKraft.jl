@@ -19,13 +19,8 @@ ModelingToolkitStandardLibrary = "2"
 OrdinaryDiffEq = "6"
 Plots = "1"
 SciCompDSL = "1"
-<<<<<<< HEAD
 SymbolicUtils = "1-3"
-=======
-SymbolicUtils = "4.15.0"
->>>>>>> origin/main
 julia = "1.6"
-
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
