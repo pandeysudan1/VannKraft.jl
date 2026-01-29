@@ -9,6 +9,7 @@ Simulates a complete hydropower plant with:
 using VannKraft
 using ModelingToolkit
 using ModelingToolkitStandardLibrary
+using ModelingToolkitStandardLibrary.Blocks
 using OrdinaryDiffEq
 using Plots
 
@@ -21,25 +22,25 @@ using Plots
     
     @components begin
         # Water source reservoir
-        res  = Reservoir(H = 50.0)
+        res  = VannKraft.Reservoir(H = 50.0)
         
         # Intake penstock (intake tunnel)
-        int  = Pipe(H = 20.0, L = 4500.0, D = 6.0)  
+        int  = VannKraft.Pipe(H = 20.0, L = 4500.0, D = 6.0)  
         
         # Surge tank for pressure transient damping
-        st   = Surgetank(H = 80.0, L = 80.0, D = 4.0)                            
+        st   = VannKraft.Surgetank(H = 80.0, L = 80.0, D = 4.0)                            
         
         # Main penstock (high head)
-        pen  = Pipe(H = 300.0, L = 500.0, D = 4.0)    
+        pen  = VannKraft.Pipe(H = 300.0, L = 500.0, D = 4.0)    
         
         # Turbine with electronic governor
-        tur  = Turbine(H_n = 370.0, Vdot_n = 40.0)                               
+        tur  = VannKraft.Turbine(H_n = 370.0, Vdot_n = 40.0)                               
         
         # Discharge/tailrace penstock
-        dis  = Pipe(H = 2.0, L = 600.0, D = 6.0)
+        dis  = VannKraft.Pipe(H = 2.0, L = 600.0, D = 6.0)
         
         # Downstream tailrace reservoir
-        tail = Reservoir(H = -5.0)                    
+        tail = VannKraft.Reservoir(H = -5.0)                    
         
         # Electronic governor: ramp control of turbine guide vane
         ramp = Blocks.Ramp(height = 0.45, duration = 5.0, 
