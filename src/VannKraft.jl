@@ -8,19 +8,18 @@ using DynamicQuantities
 
 using SciCompDSL
 
-# Submodules
-include("hydraulics/Hydraulics.jl")
-include("electrical/Electrical.jl")
-include("control_system/ControlSystem.jl")
-include("io_api/IOAPI.jl")
+# Interfaces / shared definitions
+include("connectors.jl")
 
-# Re-export main components and systems
-using .Hydraulics
-using .Electrical
-using .ControlSystem
-using .IOAPI
+# Components
+include("pipe.jl")
+include("reservoir.jl")
+include("surgetank.jl")
+include("turbine.jl")
+include("governor.jl")
+include("generators.jl")
 
-# Exports - Hydraulic components
+# Exports
 export
 	HydroPort,
 	FluidData,
@@ -29,9 +28,5 @@ export
 	Reservoir,
 	Surgetank,
 	Turbine,
-	# Electrical components
-	SwingGenerator,
-	# Control system components
-	Governor
-
+	SwingGenerator
 end
