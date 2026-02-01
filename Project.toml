@@ -13,11 +13,11 @@ SciCompDSL = "91a8cdf1-4ca6-467b-a780-87fda3fff15e"
 
 [compat]
 DynamicQuantities = "1"
-ModelingToolkit = "10.32.0"
-ModelingToolkitStandardLibrary = "2.25.0"
+ModelingToolkit = "10"
+ModelingToolkitStandardLibrary = "2"
 OrdinaryDiffEq = "6"
 Plots = "1"
-SciCompDSL = "1.0.0"
+SciCompDSL = "1"
 julia = "1.12"
 
 [extras]
